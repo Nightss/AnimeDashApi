@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 #addtional gems
   #data
     gem 'mysql2', '~> 0.5.2'
+    gem 'nokogiri', '~> 1.8.5'
   #testing
     gem 'rspec', '~> 3.8.0'
     gem 'faker', '~> 1.9.1'
