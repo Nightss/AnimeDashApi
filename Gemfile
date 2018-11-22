@@ -31,6 +31,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
   #data
     gem 'mysql2', '~> 0.5.2'
     gem 'nokogiri', '~> 1.8.5'
+    gem 'rest-client', '~> 2.0.2'
   #testing
     gem 'rspec', '~> 3.8.0'
     gem 'faker', '~> 1.9.1'
