@@ -3,4 +3,6 @@ class Tag < ApplicationRecord
   has_many :anime, through: :anime_tags
   # has_and_belongs_to_many :anime
 
+  validates_presence_of :name, :description
+
 end
