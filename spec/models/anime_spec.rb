@@ -12,7 +12,7 @@ RSpec.describe Anime, :type => :model do
   it {should validate_presence_of(:description)}
   it {should validate_presence_of(:type)}
   it {should validate_presence_of(:start_date)}
-
+  it {should have_many(:tags).through(:anime_tags)}
   # before(:each) do
   #   @anime = Anime.new()
   #   @anime.title = "God"
