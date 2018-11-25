@@ -8,7 +8,9 @@ RSpec.describe Anime, :type => :model do
   #   start_date: Date.today,
   #   end_date: Date.today.next_quarter
   #   ) }
-  it {should validate_presence_of(:title)}
+
+  it {should validate_presence_of(:en_title)}
+  it {should validate_presence_of(:jp_title)}
   it {should validate_presence_of(:description)}
   it {should validate_presence_of(:type)}
   it {should validate_presence_of(:start_date)}

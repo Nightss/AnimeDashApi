@@ -1,7 +1,8 @@
 class InitialSchema < ActiveRecord::Migration[5.2]
   def change
     create_table :anime do |t|
-      t.text :title
+      t.text :en_title
+      t.text :jp_title
       t.text :description
       t.string :type
       t.date :start_date

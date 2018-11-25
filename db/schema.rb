@@ -13,7 +13,8 @@
 ActiveRecord::Schema.define(version: 2018_11_13_101201) do
 
   create_table "anime", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.text "title"
+    t.text "en_title"
+    t.text "jp_title"
     t.text "description"
     t.string "type"
     t.date "start_date"

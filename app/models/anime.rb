@@ -4,7 +4,8 @@ class Anime < ApplicationRecord
   has_many :tags, through: :anime_tags
   # has_and_belongs_to_many :tags
 
-  validates_presence_of :title,
+  validates_presence_of :en_title,
+                        :jp_title,
                         :description,
                         :type,
                         :start_date,
