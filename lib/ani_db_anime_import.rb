@@ -1,4 +1,4 @@
-module AnimeImport
+module AniDbAnimeImport
   # extend self
   require 'rest-client'
 

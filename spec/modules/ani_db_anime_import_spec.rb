@@ -1,5 +1,5 @@
-RSpec.describe AnimeImport do
-  let(:anime_import) { Class.new.include(AnimeImport).new }
+RSpec.describe AniDbAnimeImport do
+  let(:anime_import) { Class.new.include(AniDbAnimeImport).new }
 
   describe '#create_endpoint' do
 
