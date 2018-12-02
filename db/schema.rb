@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2018_11_13_101201) do
     t.integer "score"
     t.integer "rating"
     t.integer "episode_count"
+    t.float "episodelength"
     t.text "description"
     t.string "picture"
     t.date "start_date"

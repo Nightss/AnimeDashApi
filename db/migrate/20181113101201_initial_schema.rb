@@ -8,6 +8,7 @@ class InitialSchema < ActiveRecord::Migration[5.2]
       t.integer :score
       t.integer :rating
       t.integer :episode_count
+      t.float :episodelength
       t.text :description
       t.string  :picture
       t.date :start_date
