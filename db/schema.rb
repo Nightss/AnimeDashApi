@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2018_11_13_101201) do
     t.string "picture"
     t.date "start_date"
     t.date "end_date"
+    t.integer "kitsu_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

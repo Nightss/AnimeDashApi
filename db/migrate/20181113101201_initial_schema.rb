@@ -13,6 +13,7 @@ class InitialSchema < ActiveRecord::Migration[5.2]
       t.string  :picture
       t.date :start_date
       t.date :end_date
+      t.integer :kitsu_id
       t.timestamps
     end
 
