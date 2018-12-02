@@ -15,12 +15,17 @@ ActiveRecord::Schema.define(version: 2018_11_13_101201) do
   create_table "anime", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "en_title"
     t.text "jp_title"
-    t.text "description"
     t.string "type"
+    t.string "status"
+    t.integer "score"
+    t.integer "rating"
+    t.integer "episode_count"
+    t.text "description"
+    t.string "picture"
     t.date "start_date"
     t.date "end_date"
-    t.integer "episode_count"
-    t.binary "picture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "anime_tags", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -32,7 +37,10 @@ ActiveRecord::Schema.define(version: 2018_11_13_101201) do
   create_table "tags", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.integer "kitsu_id"
     t.integer "count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -3,19 +3,24 @@ class InitialSchema < ActiveRecord::Migration[5.2]
     create_table :anime do |t|
       t.text :en_title
       t.text :jp_title
-      t.text :description
       t.string :type
+      t.string :status
+      t.integer :score
+      t.integer :rating
+      t.integer :episode_count
+      t.text :description
+      t.string  :picture
       t.date :start_date
       t.date :end_date
-      t.integer :episode_count
-      t.binary  :picture
-      #will change to string and host images elsewhere
+      t.timestamps
     end
 
     create_table :tags do |t|
       t.string :name
       t.string :description
+      t.integer :kitsu_id
       t.integer :count
+      t.timestamps
     end
 
     create_join_table :anime, :tags do |t|
