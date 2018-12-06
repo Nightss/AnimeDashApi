@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2018_11_13_101201) do
 
   create_table "tags", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-    t.string "description"
+    t.text "description"
     t.integer "kitsu_id"
     t.integer "count"
     t.datetime "created_at", null: false

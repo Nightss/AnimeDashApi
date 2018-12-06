@@ -19,7 +19,7 @@ class InitialSchema < ActiveRecord::Migration[5.2]
 
     create_table :tags do |t|
       t.string :name
-      t.string :description
+      t.text :description
       t.integer :kitsu_id
       t.integer :count
       t.timestamps
